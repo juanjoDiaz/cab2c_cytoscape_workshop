@@ -1,0 +1,15 @@
+#Import network
+network import file indexColumnTargetInteraction=1 indexColumnSourceInteraction=2 file="[folder]/presenilin.sif"
+
+#Import and set style
+vizmap load file file="[folder]/presenilin_style.xml"
+vizmap apply styles=Presenilin
+
+#Set layout
+layout force-directed
+
+#Set view to fit display
+view fit content    
+
+#Save 
+view export OutputFile="[folder]/presenilin.pdf" options=PDF
